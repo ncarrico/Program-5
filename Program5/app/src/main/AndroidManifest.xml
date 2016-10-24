@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.cosc4730.prog4db.prog5Neil">
+    <permission android:name="edu.cosc4730.prog4db.prog5Neil.READ_DATABASE" android:protectionLevel="normal" />
+    <permission android:name="edu.cosc4730.prog4db.prog5Neil.WRITE_DATABASE" android:protectionLevel="normal" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="edu.cosc4730.prog4db.prog5Neil.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:authorities="edu.cosc4730.prog4db.prog5Neil"
+            android:name="edu.cosc4730.prog4db.prog5Neil.ContactsProvider"
+            android:exported="true"
+            android:readPermission="edu.cosc4730.prog4db.prog5Neil.READ_DATABASE"
+            android:writePermission="edu.cosc4730.prog4db.prog5Neil.WRITE_DATABASE"
+            />
+    </application>
+
+</manifest>

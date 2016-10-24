@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Program 5</string>
+    <string name="action_settings">Settings</string>
+    <string name="enter_information">Enter Your Stuff</string>
+    <string name="enterName">Name:</string>
+    <string name="enterDate">Date:</string>
+    <string name="enterType">Type:</string>
+    <string name="enterAmount">Amount:</string>
+    <string name="delete_all_contacts">Delete All Contacts</string>
+</resources>
